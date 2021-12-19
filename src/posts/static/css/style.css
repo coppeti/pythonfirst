@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+@import 'reset.css';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e6e2e3;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #717279;
+}
+
+nav a:hover {
+    color: black;
+}
+
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#blog article {
+    margin-top: 3rem;
+    width: 60%;
+}
+
+.full-article {
+    line-height: 1.5;
+}
+
+.post-title {
+    display: flex;
+    align-items: baseline;
+}
+
+.post-title a {
+    color: #4a6d7c;
+    text-decoration: none;
+    margin-left: 0.8rem;
+}
+
+.post-title a:last-child {
+    color: #e83151;
+}
+
+.post-title > div {
+    margin-left: auto;
+}
+
+.post-author {
+    margin: 0.5rem 0;
+}
+
+.post-excerpt {
+    margin-bottom: 0.5rem;
+}
+
+.read-more {
+    margin-top: 1.5rem;
+}
+
+.read-more a {
+    text-decoration: none;
+}
+
+input,
+textarea {
+    display: block;
+    padding: 0.7rem;
+    line-height: 1.5;
+    border: 1px solid #0a2733;
+    border-radius: 0.3rem;
+    min-width: 600px;
+}
+
+label {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 1.2rem 0 0.6rem 0;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.7rem;
+    color: white;
+}
+
+.btn-regular {
+    background-color: steelblue;
+}
+
+.btn-danger {
+    background-color: indianred;
+}
+
+@media (max-width: 1024px) {
+    #blog article {
+        width: 85%;
+    }
+}
